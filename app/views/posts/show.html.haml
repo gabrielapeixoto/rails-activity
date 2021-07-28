@@ -1,0 +1,26 @@
+%h1 Funcionário
+%p
+  %strong Id:
+  = @post.id
+%p
+  %strong Funcionário:
+  = @post.name
+%p
+  %strong Idade:
+  = @post.age
+%p
+  %strong CEP:
+  = @post.cep
+%p
+  %strong Rua:
+  = @post.street
+%p
+  %strong Número:
+  = @post.number
+%p
+  %strong Bairro:
+  = @post.district
+%p
+  %strong Estado:
+  = @post.state
+= link_to "Voltar", root_path

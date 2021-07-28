@@ -1,0 +1,32 @@
+%h1 Editar Funcionário
+= form_for(@post) do |f|
+  = f.label :Funcionário
+  %br/
+  = f.text_field :name
+  %br/
+  = f.label :Idade
+  %br/
+  = f.text_area :age
+  %br/
+  = f.label :CEP
+  %br/
+  = f.text_area :cep
+  %br/
+  = f.label :Rua
+  %br/
+  = f.text_area :street
+  %br/
+  = f.label :Número
+  %br/
+  = f.text_area :number
+  %br/
+  = f.label :Bairro
+  %br/
+  = f.text_area :district
+  %br/
+  = f.label :Estado
+  %br/
+  = f.text_area :state
+  %br/
+  = f.submit
+= link_to "Voltar", root_path
