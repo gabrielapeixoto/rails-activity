@@ -1,0 +1,9 @@
+%h1 Cadastro de Empresa
+= form_for(@company) do |f|
+  = f.label :empresa
+  %br/
+  = f.text_field :name
+  %br/
+  = f.submit
+
+= link_to "Voltar", companies_path

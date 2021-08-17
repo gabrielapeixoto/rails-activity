@@ -1,0 +1,16 @@
+%h1 Lista de Empresas
+%table
+  %thead
+    %tr
+      %th Id
+      %th Empresa
+  %tbody
+    - @companies.each do |company|
+      %tr
+        %td= company.id
+        %td= company.name
+        %td= link_to "Visualizar", company_path(company)
+        %td= link_to "Editar", edit_company_path(company)
+        %td=link_to "Excluir", company_path(company), method: :delete
+
+= link_to "Novo Funcionário", new_company_path
