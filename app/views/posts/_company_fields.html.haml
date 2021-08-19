@@ -1,0 +1,6 @@
+.fields
+  = f.collection_select(:post_companies, Company.all, :id, :name)
+  = f.hidden_field :_destroy
+  %br/
+  
+  = link_to "remove", '#', class: "remove_fields"

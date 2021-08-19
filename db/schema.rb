@@ -19,13 +19,6 @@ ActiveRecord::Schema.define(version: 20210817194957) do
     t.datetime "updated_at",             null: false
   end
 
-  create_table "companies_posts", force: :cascade do |t|
-    t.integer  "post_id",    limit: 4
-    t.integer  "company_id", limit: 4
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
-  end
-
   create_table "post_companies", force: :cascade do |t|
     t.integer  "post_id",    limit: 4
     t.integer  "company_id", limit: 4

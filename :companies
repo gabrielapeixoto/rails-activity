@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/gabrielapeixoto/rails-activity/app/views/posts/new.html.haml @ line 31 ActionView::CompiledTemplates#_app_views_posts_new_html_haml___4037292444907979719_69816280288800:
+
+    [1;34m26[0m:   %br/
+    [1;34m27[0m:   = f.label :estado
+    [1;34m28[0m:   %br/
+    [1;34m29[0m:   = f.text_area :state
+    [1;34m30[0m:   %br/
+ => [1;34m31[0m:   - binding.pry
+    [1;34m32[0m:   = f.collection_select(:companies, Company.all, :id, :name)
+    [1;34m33[0m:   %br/
+    [1;34m34[0m:   = f.submit
+    [1;34m35[0m: 
+    [1;34m36[0m: = link_to "Voltar", posts_path
+

@@ -58,10 +58,10 @@ class PostsController < ApplicationController
     private
 
     def post_params
-        params.require(:post).permit(:name, :age, :cep, :street, :number, :city, :state, company_ids:[])
+        params.require(:post).permit(:name, :age, :cep, :street, :number, :city, :state, :post_id, :company_id)
     end
 
     def set_post
         @post = Post.find(params[:id])
-     end
+    end
 end
