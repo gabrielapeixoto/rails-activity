@@ -1,5 +1,6 @@
 .fields
-  = f.collection_select(:post_companies, Company.all, :id, :name)
+  = f.hidden_field :post_id, @post.id if @post.persisted?
+  = f.collection_select :post_company, :company_id, Company.all, :id, :name
   = f.hidden_field :_destroy
   %br/
   

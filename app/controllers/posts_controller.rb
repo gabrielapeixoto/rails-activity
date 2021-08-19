@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
     def create
         @post = Post.new(post_params)
-
+        binding.pry
         respond_to do |format|
             if @post.save
                 format.html { redirect_to @post, notice: 'Funcionário cadastrado com sucesso.' }
@@ -58,7 +58,7 @@ class PostsController < ApplicationController
     private
 
     def post_params
-        params.require(:post).permit(:name, :age, :cep, :street, :number, :city, :state, :post_id, :company_id)
+        params.require(:post).permit(:name, :age, :cep, :street, :number, :city, :state)
     end
 
     def set_post
